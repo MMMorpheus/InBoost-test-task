@@ -1,0 +1,21 @@
+.checkboxWrapper {
+    width: 233px;
+    height: 40px;
+    border: 1px solid #eaf2ff;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    position: relative;
+    & > label > input[type="checkbox"] {
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+    }
+    & > label > span {
+        padding-inline-start: 10px;
+    }
+}

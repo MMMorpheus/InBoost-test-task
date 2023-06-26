@@ -1,0 +1,10 @@
+.list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -234px;
+    &.opened {
+        display: block;
+    }
+}

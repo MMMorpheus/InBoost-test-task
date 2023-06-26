@@ -1,0 +1,45 @@
+.nodeWrapper {
+    margin: 100px 0 0 100px;
+    //
+
+    position: relative;
+    padding: 19px 3px 6px 3px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    background-color: #d1e7dd;
+}
+.emptyBox {
+    width: 235px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.listHandler {
+    width: 233px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid Green;
+    &.opened {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: #eaf2ff;
+    }
+    & > svg {
+        transition: transform 0.3s ease;
+
+    }
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+.rotated-not {
+    transform: rotate(0);
+}
